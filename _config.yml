@@ -9,7 +9,7 @@ baseurl: 'http://ShaddeHarod.github.io'
 
 # Navigation links
 nav:
-  Home: '/'
+  Home: '/Introduction.md'
   About US: '/Introduction.md'
 
 # # Footer
