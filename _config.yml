@@ -5,11 +5,11 @@ keyword: 'immersive heritage app'
 url: 'http://ShaddeHarod.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: 'http://ShaddeHarod.github.io'
+baseurl: ''
 
 # Navigation links
 nav:
-  Home: '/'
+  home: '/Introduction.md'
   About US: '/Introduction.md'
 
 # # Footer
@@ -17,10 +17,9 @@ nav:
    since: 2018
 
 #  Author 配置博主信息
- author: GRP2018-08
-# nickname: '悟空'
+  author: GRP2018-08
+  nickname: '悟空'
   bio: 'Group or team???'
-# avatar: '/assets/img/profile.png'
 
 # Search
 search: true

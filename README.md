@@ -127,11 +127,11 @@ You can easily get started by modifying _config.yml
 
 ```
 # Site settings
-title: 'GRP2018-08' # 你的博客网站标题
-description: 'The website for immersive heritage app' # 站点描述
-keyword: 'GRP2018-08' # 网站关键词
-url: 'https://shaddeharod.github.io/' # 站点url
-baseurl: 'https://shaddeharod.github.io/'
+title: '廖柯宇的独立博客' # 你的博客网站标题
+description: '很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
+keyword: '廖柯宇, 廖柯宇的独立博客, 前端, 设计' # 网站关键词
+url: 'http://liaokeyu.com' # 站点url
+baseurl: ''
 
 # Build settings
 paginate: 6 # 一页放几篇文章
@@ -164,7 +164,7 @@ tags: jekyll 前端开发 设计
 # Navigation links
 nav:
   home: '/'
-  About US: 'Introduction.md'
+  tags: '/tags.html'
 ```
 
 导航链接需要写上完整的html文件名，它们都是放于根目录下的，如果自建文件夹，请务必在`exclude` 参数中增加自建文件夹的文件名:
@@ -176,17 +176,77 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 这样做是为了在Jekyll运行时排除某些文件被复制到运行文件`_site`里去。
 
+#### 侧边栏
 
+![](screenshot/jekyll-theme-h2o-sideBar.png)
 
+侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。
 
+#### 社交图标
 
+使用阿里的图标管理平台Iconfont整理了一套常用的社交图标用于博客的个人简介上，包括微博、知乎、掘金、简书、Github等十三个网站，并且对鼠标悬停时的样式颜色进行了优化。
 
+配置格式如下：
 
+```
+# SNS settings 配置社交网站url
+sns:
+  weibo: '//weibo.com/lovecolcol'
+  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  instagram: '//www.instagram.com/steveliaocn'
+  github: '//github.com/kaeyleo'
+```
 
+sns属性可选参数：
+
+社交网站 | 参数
+--------|----
+微博 | `weibo`
+推特 | `twitter`
+Github | `github`
+知乎 | `zhihu`
+掘金 | `juejin`
+豆瓣 | `douban`
+简书 | `jianshu`
+UI中国 | `uicn`
+领英 | `linkedin`
+Facebook | `facebook`
+Youtube | `youtube`
+Instagram | `instagram`
+Dribbble | `dribbble`
+Behance | `behance`
+Medium | `medium`
+VK | `vk`
+
+#### 个人简介
+
+首页侧边栏和文章页面底部都会显示你的个人简介
+
+```
+# Author 配置博主信息
+author: 'Jack'
+nickname: 'xx'
+bio: '程序员'
+avatar: 'assets/img/avatar.jpg'
+```
+
+#### 标签
+
+对侧边栏的标签模块进行相应配置：
+
+```
+# Tags
+recommend-tags: true
+recommend-condition-size: 12
 
 ```
 
+Tags配置说明：
 
+ 属性 | 参数 | 描述
+-----|-----|-------
+`recommend-tags` | `true`, `false` | 是否显示推荐标签
+`recommend-condition-size` | `12` 或其他数字 | 推荐标签个数限制
 
 #### 文章搜索
 
