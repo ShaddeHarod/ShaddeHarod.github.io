@@ -9,6 +9,7 @@ baseurl: ''
 
 # Navigation links
 nav:
+<<<<<<< HEAD
   home: '/Introduction.md'
   About US: '/Introduction.md'
 
